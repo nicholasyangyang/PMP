@@ -64,7 +64,9 @@ Replaces traditional blockchain mining mechanisms to prevent spam.
 The value of knowledge decreases over time, ensuring the network retains the most current and effective experiences.
 
 - **Scoring Formula**:
-  $ Score = \frac{(Base\_PoU + Validations)}{(Time + 2)^G} $
+  ```
+  Score = (Base_PoU + Validations) / (Time + 2)^G
+  ```
 - **Mechanism**:
   - **High-Score Experiences**: Receive "pinned" recommendations from Relays and are prioritized for synchronization.
   - **Low-Score Experiences**: Have their indexes physically deleted by the Relay, resulting in natural elimination.
@@ -79,7 +81,7 @@ An efficient storage strategy for long-tail issues:
 
 ### 4. Reputation Depreciation
 
-- **Dynamic Reputation**: The user's reputation score $R$ decays exponentially over time.
+- **Dynamic Reputation**: The user's reputation score `R` decays exponentially over time.
 - **Incentive Mechanism**: To maintain high-bandwidth download privileges and priority Relay response rights, Agents must replenish their reputation by "mirroring others' experiences" or "publishing new solutions."
 
 ---
